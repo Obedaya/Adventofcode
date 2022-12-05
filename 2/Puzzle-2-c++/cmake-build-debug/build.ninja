@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug/
+cmake_ninja_workdir = /home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target c__
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = /home/simon/Programms/challenges/adventofcode/2/c++/cmake-
 
 build cmake_object_order_depends_target_c__: phony || CMakeFiles/c__.dir
 
-build CMakeFiles/c__.dir/main.cpp.o: CXX_COMPILER__c___Debug /home/simon/Programms/challenges/adventofcode/2/c++/main.cpp || cmake_object_order_depends_target_c__
+build CMakeFiles/c__.dir/main.cpp.o: CXX_COMPILER__c___Debug /home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/main.cpp || cmake_object_order_depends_target_c__
   DEP_FILE = CMakeFiles/c__.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/c__.dir
@@ -79,7 +79,7 @@ build c__: CXX_EXECUTABLE_LINKER__c___Debug CMakeFiles/c__.dir/main.cpp.o
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/ccmake -S/home/simon/Programms/challenges/adventofcode/2/c++ -B/home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug
+  COMMAND = cd /home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/ccmake -S/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++ -B/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/simon/Programms/challenges/adventofcode/2/c++ -B/home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug
+  COMMAND = cd /home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug && /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++ -B/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug
+# Folder: /home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug
 
 build all: phony c__
 

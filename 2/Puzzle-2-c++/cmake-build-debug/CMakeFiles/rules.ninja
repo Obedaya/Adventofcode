@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/simon/Programms/challenges/adventofcode/2/c++ -B/home/simon/Programms/challenges/adventofcode/2/c++/cmake-build-debug
+  command = /app/extra/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++ -B/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

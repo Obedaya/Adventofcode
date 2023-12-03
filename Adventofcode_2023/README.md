@@ -9,3 +9,7 @@ See all challenges here: https://adventofcode.com/2023
 ## Introduction
 
 This year I want to learn C, so my goal is to only use C for every challenge. We'll C...
+
+## Update
+
+I am also using python.

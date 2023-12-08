@@ -1,35 +1,36 @@
 def score_card(card):
-    total = 0
-    next_cards = 0
-    card = card.split("|")
-    winning_numbers = card[0].lstrip(":").split()
-    numbers = card[1].split()
+    # Extracts winning numbers and card numbers
+    winning_numbers, numbers = card.split("|")
+    winning_numbers = winning_numbers.lstrip(":").split()
+    numbers = numbers.split()
 
-    for i in winning_numbers:
-        if i in numbers and total != 0:
-            total *= 2
-            next_cards += 1
-        elif i in numbers:
-            total = 1
-            next_cards += 1
+    # Count how many winning numbers are in the card's numbers
+    matching_numbers = sum(1 for num in winning_numbers if num in numbers)
 
-    return total, next_cards
+    return matching_numbers
 
+def count_cards(all_cards, card_index):
+    # Base case: if the current index is beyond the list length, stop the recursion
+    if card_index >= len(all_cards):
+        return 0
 
-def get_card(all_cards, card, current_card_count, total):
-    current_total, next_cards = score_card(card)
+    # Count the matching numbers for the current card
+    next_cards = score_card(all_cards[card_index])
+
+    # Count the current card
+    total_cards = 1
+
+    # Recursively count the cards for each next card
     for i in range(1, next_cards + 1):
-        if i + current_card_count == len(all_cards):
-            return 0
-        else:
-            total = get_card(all_cards, all_cards[current_card_count + i],current_card_count + 1 , total)
-    return total + current_total
+        next_card_index = card_index + i
+        if next_card_index < len(all_cards):
+            total_cards += count_cards(all_cards, next_card_index)
 
+    return total_cards
 
 if __name__ == '__main__':
-    f = open("Input_1.txt", 'r')
-    lines = f.readlines()
+    with open("Input_1.txt", 'r') as f:
+        lines = [line.strip() for line in f.readlines() if line.strip()]
 
-    sum_totals = get_card(lines, lines[0], 0, 0)
-
-    print(sum_totals)
+    total_cards_counted = count_cards(lines, 0)
+    print(total_cards_counted)

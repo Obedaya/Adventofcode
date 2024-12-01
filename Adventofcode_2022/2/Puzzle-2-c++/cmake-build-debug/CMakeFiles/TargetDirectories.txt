@@ -1,3 +1,0 @@
-/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug/CMakeFiles/c__.dir
-/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/simon/Programms/challenges/adventofcode/2/Puzzle-2-c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

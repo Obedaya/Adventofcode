@@ -34,6 +34,10 @@ with open('Input_2.txt', 'r') as input:
 
         if determine_safe(report, 0, -1, 0):
             safe_levels += 1
+        else:
+            report.pop(0)
+            if determine_safe(report, 0, -1, 1):
+                safe_levels += 1
 
 
 print(f"Safe levels: {safe_levels}")
